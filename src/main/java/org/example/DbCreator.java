@@ -17,8 +17,8 @@ public class DbCreator {
     static String connectionString = "jdbc:hsqldb:file:db-data/mydatabase;user=admin123;password=admin123";
 
 	public void createAndLoadData() throws Exception {
-		String createContacts = readToString("JDBC/sql/HR_create.sql");
-		String populateContacts = readToString("JDBC/sql/HR_loadData.sql");
+		String createContacts = readToString("sql/HR_create.sql");
+		String populateContacts = readToString("sql/HR_loadData.sql");
 
 		System.out.println("Attempting to create contacts DB ... ");
 
